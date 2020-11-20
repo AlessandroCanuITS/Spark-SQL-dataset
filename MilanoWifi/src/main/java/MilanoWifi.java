@@ -21,7 +21,7 @@ public class MilanoWifi {
                 .option("inferSchema", "false")
                 .option("nullValue", "null")
                 .option("treatEmptyValuesAsNulls", "true")
-                .json("C:/Users/preda/OneDrive/Desktop/Containers/AssignementMilanoWifi/MilanoWifi/dataset/wifi_milano_daily_login_per_zone.json");
+                .json("dataset/wifi_milano_daily_login_per_zone.json"); //it could be necessary to specify the absolute path for the file
 
 
         df.createOrReplaceTempView("milano_wifi");
